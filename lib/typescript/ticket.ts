@@ -1,9 +1,9 @@
 import { RequestPromise } from 'request-promise'
 
 declare class Ticket {
-  get(opts?: {}): RequestPromise
+  get(properties?: Array<string>, opts?: {}): RequestPromise
 
-  getById(id: number, opts?: {}): RequestPromise
+  getById(id: number, properties?: Array<string>): RequestPromise
 
   getBatchByID(ids: Array<number>, opts?: {}): RequestPromise
 

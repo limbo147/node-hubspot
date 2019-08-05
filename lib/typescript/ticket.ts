@@ -12,9 +12,10 @@ declare class Ticket {
   updateById(id: number, data: {}): RequestPromise
 
   create(data: {}): RequestPromise
+  
   createBatch(ticks: Array<object>): RequestPromise
   
-  deleteBatchByIds(ids: []): RequestPromise
+  deleteBatchByIds(ids: Array<number>): RequestPromise
   
   getChangeLogs(opts?: {}): RequestPromise
 
